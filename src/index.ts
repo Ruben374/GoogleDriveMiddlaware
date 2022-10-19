@@ -2,10 +2,9 @@ import express from "express";
 const Error = require("./interfaces");
 const app = express();
 require("dotenv").config({ path: __dirname + "./../.env" });
+const testRoute= require("./routes/mainroute")
 
-app.get("/", (req, res) => {
-  res.send("Hello word");
-});
+app.use("/test",testRoute)
 
 app.use((req, res, next) => {
   //error 404
