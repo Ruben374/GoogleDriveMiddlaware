@@ -1,3 +1,5 @@
 /node_modules
 /.env
-/.temp
+temp/
+/drive.json
+/OAuth_Client_secret.json
